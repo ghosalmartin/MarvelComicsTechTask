@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">TechTask</string>
+
+    <string name="marvel_comic_textfield_search_term_hint">Enter search term and wait api is slow</string>
+    <string name="no_browser">You have no browser installed</string>
+
+</resources>

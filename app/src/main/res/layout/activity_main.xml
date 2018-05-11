@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
+    <!-- Using singleLine instead of maxLines due to https://issuetracker.google.com/issues/36950033 -->
+    <com.example.mgh01.techtask.utils.InstantAutoCompleteTextView
+            android:id="@+id/marvel_comic_search_text_field"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/marvel_comic_textfield_search_term_hint"
+            android:singleLine="true"
+            android:layout_marginBottom="@dimen/item_to_item_margin"
+            android:layout_marginTop="@dimen/item_to_item_margin"
+            android:imeOptions="flagNoExtractUi"/>
+
+    <android.support.v7.widget.RecyclerView
+            android:id="@+id/marvel_comic_search_recycler_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="gone"/>
+
+</LinearLayout>
